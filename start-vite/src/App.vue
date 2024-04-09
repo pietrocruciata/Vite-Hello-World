@@ -9,9 +9,15 @@ export default{
 </script>
 
 <template>
-  <h1 class="center">
+  <div id="AppTitle">
+    <h1 class="center">
     {{ message }}
   </h1>
+  </div>
+  <div id="AppHero">
+    <img src="../public/vi.jpg" alt="">
+  </div>
+ 
 </template>
 
 <style>
