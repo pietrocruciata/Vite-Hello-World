@@ -1,27 +1,35 @@
-<script>
-export default{
-  data(){
-    return{
-      message: 'La mia prima app con vite'
-    }
-  }
-}
+<script setup>
+import AppTitle from './components/AppTitle.vue'
+import AppHero from './components/AppHero.vue'
 </script>
 
 <template>
-  <div id="AppTitle">
-    <h1 class="center">
-    {{ message }}
-  </h1>
-  </div>
-  <div id="AppHero">
-    <img src="../public/vi.jpg" alt="">
-  </div>
- 
+  <!-- <div>
+    <a href="https://vitejs.dev" target="_blank">
+      <img src="/vite.svg" class="logo" alt="Vite logo" />
+    </a>
+    <a href="https://vuejs.org/" target="_blank">
+      <img src="./assets/vue.svg" class="logo vue" alt="Vue logo" />
+    </a>
+  </div> -->
+  <AppTitle />
+  <AppHero />
+
 </template>
 
-<style>
-.center{
-  text-align: center;
+<!-- <style scoped>
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
 }
-</style>
+
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+
+.logo.vue:hover {
+  filter: drop-shadow(0 0 2em #42b883aa);
+}
+</style> -->
